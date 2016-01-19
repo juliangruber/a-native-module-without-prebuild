@@ -1,5 +1,5 @@
 {
-  "name": "leveldown",
+  "name": "a-native-module",
   "description": "A Node.js LevelDB binding, primary backend for LevelUP",
   "version": "1.4.3",
   "contributors": [
@@ -19,9 +19,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/level/leveldown.git"
+    "url": "https://github.com/juliangruber/a-native-module.git"
   },
-  "homepage": "https://github.com/level/leveldown",
+  "homepage": "https://github.com/juliangruber/a-native-module",
   "keywords": [
     "leveldb",
     "level"
