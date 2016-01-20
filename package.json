@@ -1,5 +1,5 @@
 {
-  "name": "a-native-module",
+  "name": "a-native-module-without-prebuild",
   "description": "A Node.js LevelDB binding, primary backend for LevelUP",
   "version": "1.4.3",
   "contributors": [
@@ -19,9 +19,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/juliangruber/a-native-module.git"
+    "url": "https://github.com/juliangruber/a-native-module-without-prebuild.git"
   },
-  "homepage": "https://github.com/juliangruber/a-native-module",
+  "homepage": "https://github.com/juliangruber/a-native-module-without-prebuild",
   "keywords": [
     "leveldb",
     "level"
@@ -49,10 +49,8 @@
     "tape": "~4.3.0"
   },
   "scripts": {
-    "install": "prebuild --install",
-    "test": "tape test/*-test.js | faucet",
-    "rebuild": "prebuild --compile",
-    "prebuild": "prebuild --all --strip --verbose"
+    "install": "node-gyp rebuild",
+    "test": "tape test/*-test.js | faucet"
   },
   "license": "MIT",
   "gypfile": true
